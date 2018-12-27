@@ -1,0 +1,33 @@
+@import '../../scss/variables';
+@import '../../scss/vendor/respond';
+
+.wrapper {
+  padding: 24px 0 18px;
+  background: $color-teal;
+  color: #fff;
+  text-align: center;
+}
+
+.jobs {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+.job {
+  margin: 0 0 24px;
+  flex-basis: calc(50% - 12px);
+  background: $color-teal-light-hightlight;
+}
+
+//
+// Responsive
+//
+@include respond(phone-portrait) {
+  .jobs {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .job {
+    flex-basis: auto;
+  }
+}

@@ -7,8 +7,10 @@ import Me from '../../img/me.jpg'
 
 const Header = () => (
   <header className={Styles.wrapper}>
-    <img src={Me} className={Styles.me} alt="Steve McKeogh" title="Steve McKeogh" />
-    <Spotlight />
+    <div className="wrapper">
+      <img src={Me} className={Styles.me} alt="Steve McKeogh" title="Steve McKeogh" />
+      <Spotlight />
+    </div>
   </header>
 )
 

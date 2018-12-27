@@ -1,0 +1,20 @@
+@import '../../scss/vendor/respond';
+
+.wrapper {
+  margin: 0 0 34px;
+  font-size: 18px;
+  text-align: center;
+  p {
+    margin: 0 0 18px;
+    line-height: 1.5;
+  }
+}
+
+//
+// Responsive
+//
+@include respond(phone-portrait) {
+  .wrapper {
+    font-size: 16px;
+  }
+}

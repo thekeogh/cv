@@ -1,15 +1,20 @@
 import * as React from 'react'
 
+import Experience from '../../components/Experience'
 import Header from '../../components/Header'
+import Intro from '../../components/Intro'
 
 class App extends React.Component<{}, {}> {
   public render() {
     return (
-      <div className="app">
+      <>
         <Header />
-        <main>MAIN</main>
+        <main>
+          <Intro />
+          <Experience />
+        </main>
         <footer>FOOTER</footer>
-      </div>
+      </>
     )
   }
 }
