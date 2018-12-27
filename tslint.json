@@ -1,0 +1,37 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "no-floating-promises": false,
+    "quotemark": false,
+    "no-implicit-dependencies": false,
+    "arrow-parens": false,
+    "semicolon": false,
+    "no-console": false,
+    "jsx-boolean-value": false,
+    "jsx-key": false,
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
+    "jsx-wrap-multiline": false,
+    "jsx-alignment": false,
+    "jsx-no-bind": false,
+    "no-var-requires": false,
+    "ban-types": false,
+    "only-arrow-functions": false,
+    "interface-over-type-literal": false,
+    "interface-name": false,
+    "max-line-length": [false],
+    "max-classes-per-file": [false],
+    "radix": false,
+    "variable-name": false,
+    "no-empty-interface": false,
+    "no-empty": false,
+    "no-unused-expression": [true, "allow-tagged-template"],
+    "no-bitwise": false,
+    "no-object-literal-type-assertion": false,
+    "no-submodule-imports": [
+      true,
+      "filestack-js/build/main/lib/picker",
+      "react-intl/locale-data/th"
+    ]
+  }
+}
