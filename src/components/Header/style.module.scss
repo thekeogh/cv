@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+.wrapper {
+  padding: 24px 0;
+  text-align: center;
+}
+.me {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  border: solid 1px $color-grey;
+  display: block;
+}

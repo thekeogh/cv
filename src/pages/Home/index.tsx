@@ -1,10 +1,16 @@
 import * as React from 'react'
 
-interface State {}
+import Header from '../../components/Header'
 
-class App extends React.Component<{}, State> {
+class App extends React.Component<{}, {}> {
   public render() {
-    return <div>TBA...</div>
+    return (
+      <div className="app">
+        <Header />
+        <main>MAIN</main>
+        <footer>FOOTER</footer>
+      </div>
+    )
   }
 }
 
