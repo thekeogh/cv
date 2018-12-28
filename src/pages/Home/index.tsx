@@ -3,6 +3,7 @@ import * as React from 'react'
 import Experience from '../../components/Experience'
 import Header from '../../components/Header'
 import Intro from '../../components/Intro'
+import Skills from '../../components/Skills'
 
 class App extends React.Component<{}, {}> {
   public render() {
@@ -12,8 +13,8 @@ class App extends React.Component<{}, {}> {
         <main>
           <Intro />
           <Experience />
+          <Skills />
         </main>
-        <footer>FOOTER</footer>
       </>
     )
   }

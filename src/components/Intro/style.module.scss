@@ -1,3 +1,4 @@
+@import '../../scss/variables';
 @import '../../scss/vendor/respond';
 
 .wrapper {
@@ -7,6 +8,35 @@
   p {
     margin: 0 0 18px;
     line-height: 1.5;
+  }
+}
+.contact {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  li {
+    margin: 0 10px;
+  }
+  a {
+    transition: color 0.2s;
+    color: $color-teal-dark-hightlight !important;
+    text-decoration: none !important;
+    display: block;
+    i {
+      font-size: 28px;
+      display: block;
+    }
+    &:hover {
+      &.linkedin {
+        color: #3371b7 !important;
+      }
+      &.github {
+        color: #221e1b !important;
+      }
+      &.email {
+        color: #4896ec !important;
+      }
+    }
   }
 }
 

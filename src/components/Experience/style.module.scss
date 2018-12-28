@@ -17,12 +17,9 @@
 //
 // Responsive
 //
-@include respond(phone-portrait) {
+@include respond(all-phones) {
   .jobs {
     justify-content: flex-start;
     flex-direction: column;
-  }
-  .job {
-    flex-basis: auto;
   }
 }

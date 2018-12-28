@@ -50,6 +50,21 @@ body {
   letter-spacing: 1px;
   align-items: center;
   display: inline-flex;
+  &--white {
+    color: #fff;
+  }
+}
+.heading {
+  height: 82px;
+  padding: 0 24px;
+  background: $color-teal-dark-hightlight;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  &--small {
+    height: 64px;
+  }
 }
 
 //

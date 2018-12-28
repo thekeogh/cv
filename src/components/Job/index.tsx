@@ -12,7 +12,7 @@ class Job extends React.Component<Props, {}> {
   public render() {
     return (
       <article className={Styles.job}>
-        <header className={Styles.header}>
+        <header className="heading">
           <h5 className={Styles.title}>{this.props.company}</h5>
           <p className={Styles.dates}>{this.props.dates}</p>
         </header>

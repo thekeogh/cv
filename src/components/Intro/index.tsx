@@ -17,6 +17,28 @@ const Intro = () => (
         I have a huge passion for front and backend web development which I have been doing in parallel to each other
         for the length of my career. I am always looking for a new challenge.
       </p>
+      <ul className={Styles.contact}>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/thekeogh/"
+            target="_blank"
+            className={Styles.linkedin}
+            title="View my LinkedIn profile"
+          >
+            <i className="socicon-linkedin" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/thekeogh" target="_blank" className={Styles.github} title="Visit my GitHub page">
+            <i className="socicon-github" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:steve.mckeogh@gmail.com" className={Styles.email} title="Email me">
+            <i className="socicon-mail" />
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 )
