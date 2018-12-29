@@ -1,0 +1,77 @@
+@import './variables';
+@import './vendor/respond';
+@import './vendor/reset';
+
+//
+// Base/defaults
+//
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: $color-background;
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+//
+// Structure
+//
+.wrapper {
+  width: 100%;
+  max-width: 948px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+//
+// Text
+//
+.h4 {
+  height: 49px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
+  background: $color-teal;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  align-items: center;
+  display: inline-flex;
+  &--white {
+    color: #fff;
+  }
+}
+.heading {
+  height: 82px;
+  padding: 0 24px;
+  background: $color-teal-dark-hightlight;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  &--small {
+    height: 64px;
+  }
+}
+
+//
+// Responsive
+//
+@include respond(phone-portrait) {
+  .wrapper {
+    padding: 0 12px;
+  }
+}

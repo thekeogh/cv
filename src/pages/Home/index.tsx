@@ -1,11 +1,22 @@
 import * as React from 'react'
 
-interface Props {}
-interface State {}
+import Experience from '../../components/Experience'
+import Header from '../../components/Header'
+import Intro from '../../components/Intro'
+import Skills from '../../components/Skills'
 
-class App extends React.Component<Props, State> {
+class App extends React.Component<{}, {}> {
   public render() {
-    return <div>TBC...</div>
+    return (
+      <>
+        <Header />
+        <main>
+          <Intro />
+          <Experience />
+          <Skills />
+        </main>
+      </>
+    )
   }
 }
 

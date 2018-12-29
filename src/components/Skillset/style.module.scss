@@ -1,0 +1,31 @@
+@import '../../scss/variables';
+@import '../../scss/vendor/respond';
+
+.skillset {
+  width: calc(50% - 24px);
+  margin: 0 0 24px;
+  background: $color-teal;
+  text-align: left;
+}
+.title {
+  margin: 0 0 1px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.main {
+  padding: 24px;
+}
+
+//
+// Responsive
+//
+@include respond(all-phones) {
+  .skillset {
+    width: 100% !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    right: auto !important;
+    position: relative !important;
+  }
+}

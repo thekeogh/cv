@@ -1,0 +1,62 @@
+@import '../../scss/variables';
+@import '../../scss/vendor/respond';
+
+.wrapper {
+  margin: 0 0 24px;
+  padding: 24px;
+  border: solid 1px $color-grey;
+  position: relative;
+  &:before,
+  &:after {
+    height: 35px;
+    padding: 0 24px;
+    background: $color-teal;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    align-items: center;
+    display: flex;
+  }
+  &:before {
+    content: 'Curriculum Vitae';
+    top: -17px;
+  }
+  &:after {
+    content: '2018';
+    bottom: -17px;
+  }
+}
+.title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.subtitle {
+  margin: 0 0 24px;
+  font-size: 27px;
+}
+.stack {
+  margin: 0 0 10px;
+  color: $color-black;
+  font-size: 21px;
+}
+
+//
+// Responsive
+//
+@include respond(phone-portrait) {
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    margin: 0 0 18px;
+    font-size: 18px;
+  }
+  .stack {
+    font-size: 16px;
+  }
+}

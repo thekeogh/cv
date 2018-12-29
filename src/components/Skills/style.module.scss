@@ -1,0 +1,13 @@
+@import '../../scss/variables';
+@import '../../scss/vendor/respond';
+
+.wrapper {
+  padding: 24px 0;
+  text-align: center;
+}
+
+//
+// Responsive
+//
+@include respond(all-phones) {
+}
