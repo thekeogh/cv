@@ -17,7 +17,7 @@ class Job extends React.Component<Props, {}> {
           <p className={Styles.dates}>{this.props.dates}</p>
         </header>
         <main className={Styles.main}>{this.props.children}</main>
-        <footer className={Styles.footer}>{this.props.dates}</footer>
+        <footer className={Styles.footer}>{this.props.location}</footer>
       </article>
     )
   }

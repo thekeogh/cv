@@ -8,7 +8,7 @@ const Experience = () => (
     <div className="wrapper">
       <h4 className="h4">Experience</h4>
       <div className={Styles.jobs}>
-        <Job company="ScreenCloud" dates="October 2016 - Present" location="London, EC2A">
+        <Job company="ScreenCloud" dates="October 2016 - Present" location="London / Bangkok">
           <p>Lead developer for all frontend and backend development of marketing and front facing sites.</p>
           <p>Built the new oAuth authentication system for all new customers.</p>
           <p>
@@ -19,7 +19,7 @@ const Experience = () => (
             Constructed a full bespoke accounting reconcilation service that kept all bookkeeping up-to-date with Xero.
           </p>
         </Job>
-        <Job company="Codegent Ltd / Thin Martian Ltd" dates="June 2005 - October 2016" location="London, EC2A">
+        <Job company="Codegent Ltd / Thin Martian Ltd" dates="June 2005 - October 2016" location="London">
           <p>
             Technical lead and head developer on major client based and internal apps, including end-to-end web builds
             as well as campaign work such as microsites, HTML emails, banners and social assets.
@@ -37,7 +37,7 @@ const Experience = () => (
             leading in client meetings and providing accurate time estimations.
           </p>
         </Job>
-        <Job company="Reading Room" dates="March 2000 - June 2005" location="London, W1D">
+        <Job company="Reading Room" dates="March 2000 - June 2005" location="London">
           <p>Templating and functional builds of client websites.</p>
           <p>
             Architecting and maintaining a custom ColdFusion framework, alongside a custom CMS that was used across all
@@ -48,7 +48,7 @@ const Experience = () => (
             database, liasing with the client and carrying out all the builds across their portal.
           </p>
         </Job>
-        <Job company="Datadial" dates="May 1999 - March 2000" location="London, SW5">
+        <Job company="Datadial" dates="May 1999 - March 2000" location="London">
           <p>
             General day-to-day junior web developer duties, including liasing with designers to turn a design in to
             html, building frontend website builds and maintaining client websites.
