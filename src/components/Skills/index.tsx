@@ -34,6 +34,10 @@ const Skills = () => (
           <Skill title="Chai" skill={3} />
           <Skill title="PHPUnit" skill={3} />
         </Skillset>
+        <Skillset title="API">
+          <Skill title="RESTful" skill={5} />
+          <Skill title="GraphQL" skill={4} />
+        </Skillset>
         <Skillset title="Database">
           <Skill title="MySQL/MariaDB" skill={4} />
           <Skill title="PostgreSQL" skill={4} />
