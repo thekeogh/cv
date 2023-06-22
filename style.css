@@ -104,7 +104,6 @@ body {
 }
 .container {
   width: 100%;
-  height: 100%;
 }
 
 /*
@@ -156,8 +155,7 @@ a.light:hover, a.light:visited:hover, a.light:active {
   Header
 */
 header {
-  height: 125px;
-  padding: 0 40px;
+  padding: 30px 40px;
   text-align: center;
   background: var(--color-blue-100);
   align-items: center;
@@ -200,7 +198,6 @@ h5 {
 }
 .main {
   width: 100%;
-  height: calc(100% - 125px);
   display: flex;
 }
 .main main {
@@ -273,9 +270,14 @@ h5 {
 /*
   Phone landscape
 */
-@media (max-width: 812px) {
+@media (max-width: 500px) {
   body {
     width: 100%;
-    height: auto;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main main {
+    border: 0
   }
 }
