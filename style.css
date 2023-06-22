@@ -1,0 +1,281 @@
+/*
+  Variables
+*/
+:root {
+  /* Colours */
+  --color-green: #66bb6a;
+  --color-blue-100: #171e27;
+  --color-blue-80: #222a37;
+  --color-grey-90: #ddd;
+  --color-grey-80: #bebebe;
+
+  --color-background: #fff;
+  --color-foreground: #000;
+  --color-hyperlink: var(--color-green);
+  --color-muted: #757575;
+
+  /* Fonts */
+  --font-family-default: "Rubik", sans-serif;
+  --font-size-default: 16px;
+  --font-size-small: 14px;
+}
+
+/*
+  Reset
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+li,
+i,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+fieldset,
+pre {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-family: var(--font-family-default);
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  border: 0;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+:focus,
+fieldset {
+  min-width: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+}
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: none;
+  box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+/*
+  Structure
+*/
+@page {
+  size: A4;
+  margin: 0;
+}
+body {
+  width: 210mm;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-size: var(--font-size-default);
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  text-rendering: optimizespeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  Hyperlinks
+*/
+a:not([class]):link,
+a:not([class]):visited,
+a:not([class]):hover,
+a:not([class]):active,
+.link {
+  color: var(--color-hyperlink);
+  text-decoration: none;
+  cursor: pointer;
+}
+a:not([class]):hover,
+a:not([class]):visited:hover,
+.link:hover,
+.link:visited:hover {
+  text-decoration: underline;
+}
+a.light, a.light:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+a.light:hover, a.light:visited:hover, a.light:active {
+  text-decoration: none;
+}
+
+/* 
+  Utils
+*/
+.muted {
+  color: var(--color-muted) !important;
+}
+.green {
+  color: var(--color-green) !important;
+}
+.black {
+  color: var(--color-foreground) !important;
+}
+.nomargin {
+  margin: 0 !important
+}
+.small {
+  font-size: 14px !important
+}
+
+/* 
+  Header
+*/
+header {
+  height: 125px;
+  padding: 0 40px;
+  text-align: center;
+  background: var(--color-blue-100);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+header h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+}
+header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-grey-80);
+  letter-spacing: 1px;
+}
+
+/* 
+  Main
+*/
+h3 {
+  margin: 0 0 12px;
+  font-size: 26px;
+  font-weight: 700;
+}
+h3.less {
+  margin-bottom: 0;
+}
+h4 {
+  font-size: 20px;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.main {
+  width: 100%;
+  height: calc(100% - 125px);
+  display: flex;
+}
+.main main {
+  padding: 20px;
+  border-right: solid 1px var(--color-green);
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.main article {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px var(--color-grey-90);
+}
+.main article:last-child {
+  margin-bottom: 0;
+  border: 0;
+}
+.main article h4, .main article h5 {
+  margin: 0
+}
+
+.main aside {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 280px;
+}
+.main aside .contact {
+  margin-left: -1px;
+  padding: 20px 20px 28px;
+  background: var(--color-blue-80);
+  color: #fff;
+}
+.main aside .contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main aside .contact ul li {
+  margin: 0 0 8px;
+}
+.main aside .contact ul li:last-child {
+  margin: 0 
+}
+.main aside .contact ul li .ico {
+  width: 23px
+}
+.main aside .contact ul li a {
+  font-size: var(--font-size-small);
+}
+.main aside .side {
+  padding: 20px;
+}
+.main aside .side ul {
+  padding: 0 0 0 0;
+  list-style: none;
+}
+.main aside .side ul li {
+  display: inline-block
+}
+.main aside .side ul li::after {
+  content: ","
+}
+.main aside .side ul li:last-child:after {
+  content: "";
+}
+
+
+/*
+  Phone landscape
+*/
+@media (max-width: 812px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
